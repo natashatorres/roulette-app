@@ -4,50 +4,48 @@
     <title>Roulette</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <p>Casino Owner Login</p>
-
-    <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-<div class="container">
-
-
-    <h1>Place a bet</h1>
-    <form action="/messages" method="POST">
-        <label for="color">Red</label>
-        <input class="choice" type="radio" value="red" name="color"> 
-        <label for="color">Green</label>
-        <input class="choice" type="radio" value="green" name="color"> 
-        <label for="color">Black</label>
-        <input class="choice" type="radio" value="black" name="color"> 
-        <label>Your bet</label>
-        <input type="bet" placeholder="bet" name="bet" class="choice" required>
-        <button type="submit" class="submit">Spin</button>
-    </form>
-
-    <% if(outcome){ %>
-		
-		<h2><%=outcome%> </h2>
-		
-        <% } %>
+    <body>
+        <header>
+           <div class="login"> <h2>Casino Owner Login:</h2>
+                <a href="/login" class="btn btn-default">Login</a>
+           </div>
+            <div class="banner">
+                <img src="banner.png">
+            </div>
+        </header>
 
 
+        <div class="container">
+     
+
+                <form action="/" method="POST">
+                    <label for="color">Red</label>
+                    <input class="choice" type="radio" value="red" name="color"> 
+                    <label for="color">Green</label>
+                    <input class="choice" type="radio" value="green" name="color"> 
+                    <label for="color">Black</label>
+                    <input class="choice" type="radio" value="black" name="color"> 
+                    <label class="inputBetLabel">Your bet</label>
+                    <input type="bet" placeholder="bet" name="bet" class="choice inputBet" required>
+                    <button type="submit" class="submit">Spin</button>
+                </form>
+
+                <% if(outcome){ %>
+                    
+                    <h2 class="outcome">You <%=outcome%>!</h2>
+                    
+                    <% } %>
 
 
-<!-- 
-    <div class="jumbotron text-center">
-        <h1>21 Savage Fan Site</h1>
-        <img src="banner.png" alt="a graphic that reads trust your intution, a manifestation app">
 
-        <p>Login or Signup:</p>
 
-        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
 
-    </div> -->
-
-</div>
-</body>
+        </div>  
+ 
+    </body>
 </html>

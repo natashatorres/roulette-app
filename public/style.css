@@ -1,16 +1,71 @@
 body{
-  padding-top:80px;
   word-wrap:break-word;
   background-color: black;
   color:white;
+  background-image: url(background.png);
+  background-size:contain;
+}
+
+
+h2{
+  /* display:flex;
+  text-align: left; */
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.btn{
+  border: none;
+  margin-left: 1em;
+}
+
+.banner{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container{
-  background-color: rgb(59 94 33);
+  background-color: black;
   height: 40em;
-  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 img{
   height: 200px;
+}
+
+.outcome{
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size: 4em;
+
+}
+
+.inputBetLabel{
+  display: block;
+}
+.inputBet{
+  height: 4em;
+  width: 15em;
+  text-transform: uppercase;
+  display: block;
+}
+
+label{
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+
+}
+
+button{
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  border: none;
+  display: inline-block;
+  background-color: rgb(220 40 68);
+  height: 4em;
+  width: 15em;
+  margin-top: 2em;
 }

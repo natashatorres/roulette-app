@@ -56,7 +56,7 @@ function winner(playerChoice, compChoice) {
 
 // roulette game route ===============================================================
 
-    app.post('/messages', (req, res) => {
+    app.post('/', (req, res) => {
       const computerChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)]
       const playerChoice = req.body.color
 
