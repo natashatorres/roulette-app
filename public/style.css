@@ -1,0 +1,16 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: black;
+  color:white;
+}
+
+.container{
+  background-color: rgb(59 94 33);
+  height: 40em;
+  border-radius: 2em;
+
+}
+img{
+  height: 200px;
+}

@@ -1,0 +1,48 @@
+// PSEUDO CODE
+
+morning challenge: build a simple roulette app - public should be able to bet any amount and either win or lose - 
+casino owner should be able to log in and see the total wins / losses && how much money has been made || lost.
+
+
+// - wire framing —> 
+// how I want the app to look, 
+main page that allows users to place bet and lets them know if they won or not, allows admin to sign in
+another page that allows admin to see wins, losses, and bet
+
+
+// what I want it to do / how users will interact
+users place a bet (green, red, black) and input that allows users to add an amount of money.
+
+
+
+// properties to send to post method
+name
+bet
+color
+submit 
+
+collection names:
+admins
+users
+
+
+// - run server 
+// - create new collection in MongoDB --> change collection names in code (db.collection('<collectionName>'))
+// - check connection to my server 
+
+// - set up front end (inputs, where I want things to be positioned (affects childnodes))
+
+//routes
+// - GET —> how many pages in my app? how many collections? 
+//--> admin page: rename res.render('admin.ejs', {<collectionName>: result})
+
+// - POST —> form inside of index.ejs -> what inputs / request body information do I want to send to the database? 
+name
+bet
+color
+
+// - PUT —> fetch call through main.js | what am I updating? what identifiers will I use to find that specific document?
+// --> send identifier information inside of fetch body. every property inside of JSON body request = req.body.<property> in server.js
+the customers order
+
+// - DELETE —> fetch call through main.js | what identifiers will I use to find that specific document?
