@@ -16,14 +16,13 @@ users place a bet (green, red, black) and input that allows users to add an amou
 
 
 // properties to send to post method
-name
 bet
 color
-submit 
+
 
 collection names:
-admins
-users
+roulette
+
 
 
 // - run server 

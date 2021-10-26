@@ -1,6 +1,7 @@
 module.exports = function(app, passport, db) {
 
 // function to randomize winner  ===============================================================
+
 let choiceArray = ["red", "green", "black"]
 
 function winner(playerChoice, compChoice) {
